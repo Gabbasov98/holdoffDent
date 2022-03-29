@@ -51,6 +51,7 @@ function achievementSlider() {
     var swiper = new Swiper('.achievement .swiper-container', {
         slidesPerView: "auto",
         spaceBetween: 32,
+        loop: true,
         navigation: {
             nextEl: '.achievement .swiper-button-next',
             prevEl: '.achievement .swiper-button-prev',
@@ -59,7 +60,7 @@ function achievementSlider() {
 }
 
 $(document).ready(function() {
-    const sliderDelay = 2000
+    const sliderDelay = 5000
 
     function mainSlider() {
         var swiper = new Swiper('.main .swiper-container', {

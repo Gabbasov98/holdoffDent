@@ -30,6 +30,7 @@
     &__socials {
         display: flex;
         align-items: center;
+        margin-right: 25px;
         &-item {
             width: 48px;
             height: 48px;
@@ -116,7 +117,7 @@
             }
         }
         &-btn {
-            width: 133px;
+            padding: 0 8px;
             height: 28px;
             font-size: 14px;
             border-radius: 8px;
@@ -233,6 +234,19 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .footer {
+        &__phone,
+        &__time {
+            margin-left: 5px;
+        }
+        &__btn {
+            width: 180px;
+            margin-left: 20px;
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .footer {
         position: relative;
@@ -276,6 +290,7 @@
         &__socials {
             justify-content: center;
             width: 100%;
+            margin-right: 0;
         }
         &__pay {
             position: absolute;

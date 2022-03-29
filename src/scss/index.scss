@@ -307,10 +307,12 @@
     }
     .swiper {
         &-container {
-            width: calc(100% - 192px);
-            margin: 0 32px;
+            width: calc(100% - 160px);
+            margin: 0 32px 0 0;
+            padding-left: 32px;
         }
         &-slide {
+            transition: all .225s;
             width: unset;
             z-index: -1;
             position: relative;
