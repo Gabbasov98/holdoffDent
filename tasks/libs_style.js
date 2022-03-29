@@ -1,6 +1,8 @@
 const plugins = [
     'node_modules/bootstrap/dist/css/bootstrap.css',
     'node_modules/swiper/swiper-bundle.css',
+    'src/libs/jquery-ui.min.css',
+    'src/libs/twentytwenty.css'
 ];
 
 const {

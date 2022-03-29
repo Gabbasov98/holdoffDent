@@ -96,11 +96,185 @@
     }
 }
 
+.work-card {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 24px;
+    height: 300px !important;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    &__left-badge {
+        background: rgba(19, 33, 70, 0.4);
+        border-radius: 0px 20px 20px 20px;
+        width: 54px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+.feedback-card {
+    display: flex;
+    &__left {
+        width: 158px;
+        flex-shrink: 0;
+        margin-right: 32px;
+    }
+    &__right {
+        flex-grow: 1;
+    }
+    &__name,
+    &__date,
+    &__text,
+    &__by {
+        font-size: 14px;
+        line-height: 186%;
+        color: $grey;
+        margin-bottom: 2px;
+        display: block;
+    }
+    &__text {
+        color: $black;
+    }
+    &__by {
+        margin-bottom: 0;
+        margin-top: 20px;
+        a {
+            color: $blue;
+        }
+    }
+}
+
+.twentytwenty-overlay {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.twentytwenty-handle {
+    width: 48px;
+    height: 48px;
+    background-color: $blue;
+    border: 6px solid rgba($blue, 0.4);
+    box-sizing: border-box;
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background: $blue !important;
+        box-shadow: none !important;
+    }
+}
+
+.twentytwenty-after-label,
+.twentytwenty-before-label {
+    border-radius: 24px;
+    opacity: 1 !important;
+    &:before {
+        content: 'после';
+        position: absolute;
+        z-index: 1;
+        top: unset !important;
+        margin-top: 0 !important;
+        bottom: 3px;
+        right: 3px !important;
+        background: rgba(19, 33, 70, 0.4) !important;
+        border-radius: 20px 0px 20px 20px !important;
+        width: 83px;
+        height: 30px;
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1 !important;
+    }
+}
+
+.twentytwenty-before-label {
+    &::before {
+        content: 'до';
+        border-radius: 0px 20px 20px 20px !important;
+        width: 54px;
+        height: 30px;
+        left: 5px !important;
+    }
+}
+
+.twentytwenty-left-arrow {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 6px solid rgba($blue, 0.4);
+        left: -19px;
+        top: -30px;
+        box-sizing: border-box;
+        // poin
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .work-card {
+        height: 400px !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .doctor-card {
         &__inner,
         &__img {
             border-radius: 0;
         }
+    }
+    .twentytwenty-overlay,
+    .work-card,
+    .twentytwenty-after-label,
+    .twentytwenty-before-label {
+        border-radius: 0;
+    }
+    .feedback-card {
+        display: block;
+        &__left {
+            width: 100%;
+            margin: 0 0 24px 0;
+        }
+        &__text {
+            line-height: 156%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .work-card {
+        height: 300px !important;
+    }
+    .twentytwenty-after-label {
+        &::before {
+            bottom: 0 !important;
+            right: 0 !important;
+            border-radius: 0 !important;
+        }
+    }
+    .twentytwenty-before-label {
+        &::before {
+            bottom: 0 !important;
+            left: 0 !important;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .work-card {
+        height: 220px !important;
     }
 }

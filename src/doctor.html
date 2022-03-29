@@ -1,0 +1,178 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Врачи", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+
+    <div class="wrapper">
+
+        @@include('components/_header.html',{"current":"doctor"})
+        <!-- </header> -->
+
+        <main class="content">
+
+
+            <section class='doctor'>
+                <div class='container'>
+                    <div class='doctor__inner'>
+                        <div class="doctor__left">
+                            <div class="doctor__top">
+                                <div class="doctor__img">
+                                    <img src="img/doctor.webp" alt="">
+                                </div>
+                                <div class="doctor__top-right">
+                                    <h1 class="doctor__title display3">Константинов Константин Александрович</h1>
+                                    <div class="doctor__top-item">
+                                        <p class="grey-text">Специализация</p>
+                                        <p>Хирург-имплантолог, пародонтолог</p>
+                                    </div>
+                                    <div class="doctor__top-item">
+                                        <p class="grey-text">Квалификация</p>
+                                        <p>Кандидат медицинских наук</p>
+                                    </div>
+                                    <div class="doctor__top-item">
+                                        <p class="grey-text">Стаж работы</p>
+                                        <p>14 лет</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctor__info">
+                                <div class="doctor__info-group">
+                                    <p class="doctor__info-title grey-text">Специализация</p>
+                                    <p class="doctor__info-desc">Ранняя диагностика зубочелюстных аномалий</p>
+                                    <p class="doctor__info-desc">Исправление прикуса у детей, подростков и взрослых пациентов с помощь ортодонтических аппаратов </p>
+                                    <p class="doctor__info-desc">Лечение на съемной и несъемной технике</p>
+                                </div>
+                                <div class="doctor__info-group">
+                                    <p class="doctor__info-title grey-text">Образование</p>
+                                    <p class="doctor__info-desc">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
+                                    <p class="doctor__info-desc">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
+                                    <p class="doctor__info-desc">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
+                                    <p class="doctor__info-desc doctor__info-desc--hidden">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
+                                    <p class="doctor__info-desc doctor__info-desc--hidden">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
+                                    <p class="doctor__info-desc doctor__info-desc--hidden">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
+                                    <button class="doctor__info-all">
+                                        <span class="doctor__info-all-show">Читать полностью</span>
+                                        <span class="doctor__info-all-hide">Скрыть</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <form class="doctor-form">
+                                <div class="doctor-form__inner">
+                                    <p class="doctor-form__title">Запись онлайн</p>
+                                    <p class="doctor-form__desc">на прием к Константинову К. А</p>
+                                    <div class="doctor-form__fields">
+                                        <fieldset class='form-group'>
+                                            <div class="custom-select">
+                                                <input disabled type="text" value="12. 09.2022, пн">
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">12. 09.2022, пн</div>
+                                                        <div class="custom-select__dropdown-item">13. 09.2022, пн</div>
+                                                        <div class="custom-select__dropdown-item">14. 09.2022, пн</div>
+                                                        <div class="custom-select__dropdown-item">15. 09.2022, пн</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <div class="custom-select">
+                                                <input disabled type="text" value="12:00">
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">12:00</div>
+                                                        <div class="custom-select__dropdown-item">13:00</div>
+                                                        <div class="custom-select__dropdown-item">14:00</div>
+                                                        <div class="custom-select__dropdown-item">15:00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <input type='text' placeholder="Имя" />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <input type='text' placeholder="Телефон" />
+                                        </fieldset>
+                                    </div>
+                                    <button class="doctor-form__btn btn btn-dark-blue">Записаться </button>
+                                    <div class="doctor-form__phone">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.4141 14.6406L15.0391 12.7656C14.9219 12.7266 14.7656 12.6875 14.6484 12.6875C14.4141 12.6875 14.1016 12.8438 13.9453 13.0391L11.9922 15.4219C9.41406 14.1719 6.28906 11.0859 5.07812 8.50781L7.46094 6.55469C7.65625 6.39844 7.8125 6.08594 7.8125 5.8125C7.8125 5.73438 7.77344 5.57812 7.73438 5.46094L5.85938 1.08594C5.70312 0.773438 5.3125 0.539062 4.96094 0.539062C4.92188 0.539062 4.84375 0.539062 4.76562 0.539062L0.703125 1.47656C0.3125 1.55469 0 1.98438 0 2.375C0 12.4141 8.08594 20.5 18.125 20.5C18.5156 20.5 18.9453 20.1875 19.0234 19.7969L19.9609 15.7344C19.9609 15.6562 19.9609 15.5781 19.9609 15.5391C19.9609 15.1875 19.7266 14.7969 19.4141 14.6406Z" fill="#B0C8D9"/>
+                                    </svg>
+                                        <div>
+                                            <span class="doctor-form__phone-title">или запишитесь по телефону</span>
+                                            <a href="tel:+7 (495) 908-69-68" class="doctor-form__phone-link">+7 (495) 908-69-68</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="doctor__work">
+                                <h3 class="doctor__work-title display3">Работы</h3>
+                                <div class="doctor__work-grid">
+                                    @@include('components/_work-card.html')
+                                    <!--  -->
+                                    @@include('components/_work-card.html')
+                                    <!--  -->
+                                    @@include('components/_work-card.html')
+                                    <!--  -->
+                                    @@include('components/_work-card.html')
+                                    <!--  -->
+                                </div>
+                            </div>
+
+                            <div class="doctor__video">
+                                <h3 class="doctor__video-title display3">Видео</h3>
+                                <div class="doctor__video-player video_wrapper video_wrapper_full js-videoWrapper">
+                                    <iframe class="videoIframe js-videoIframe" width="100%" height="100%" src="" data-src="https://www.youtube.com/embed/mRjjW8Lj8Kc?list=RDmRjjW8Lj8Kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <button style="background-image: url('img/video.jpg');" class="videoPoster js-videoPoster"></button>
+                                </div>
+                            </div>
+
+                            <div class="doctor__feedback">
+                                <h3 class="doctor__feedback-title display3">Отзывы</h3>
+                                <div class="doctor__feedback-items">
+                                    <div class="doctor__feedback-item">
+                                        @@include('components/_feedback-card.html')
+                                    </div>
+                                    <div class="doctor__feedback-item">
+                                        @@include('components/_feedback-card.html')
+                                    </div>
+                                    <div class="doctor__feedback-item">
+                                        @@include('components/_feedback-card.html')
+                                    </div>
+                                </div>
+                                <div class="doctor__feedback-nav">
+                                    <a href="" class="doctor__feedback-link btn btn-light-blue">Еще отзывы</a>
+                                    <button class="doctor__feedback-btn btn">Оставить отзыв</button>
+                                </div>
+                            </div>
+
+
+                            <div class="doctor__licensy">
+                                <h3 class="doctor__licensy-title display3">Лицензия</h3>
+                                <div class="doctor__licensy-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus integer ipsum tortor, nulla et accumsan. Accumsan lorem eget volutpat, aliquet massa vulputate. Tortor sed tortor sodales diam nunc, non nam. Enim tellus egestas
+                                    et ornare. Donec lorem nunc etiam habitant libero eu natoque. At neque odio tempor orci mauris morbi fermentum phasellus suspendisse. Sit mattis urna at blandit dolor, semper ullamcorper. In consequat volutpat sed quis.
+                                    Dignissim etiam sollicitudin tincidunt risus libero quisque condimentum tincidunt. Etiam lacus, scelerisque nam vel. Vitae massa mattis mauris vel hac aliquam et posuere. Ac mattis habitant feugiat lorem malesuada.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+
+        <div class="gallery-modal">
+            @@include('components/_gallery.html')
+        </div>
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

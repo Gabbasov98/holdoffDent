@@ -3,6 +3,8 @@ const plugins = [
     'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
     'node_modules/swiper/swiper-bundle.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
+    'src/libs/jquery.event.move.js',
+    'src/libs/jquery.twentytwenty.js'
 ];
 const {
     src,

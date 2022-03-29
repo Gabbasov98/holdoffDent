@@ -4,7 +4,7 @@
 
     <div class="wrapper">
 
-        @@include('components/_header.html')
+        @@include('components/_header.html',{"current":""})
         <!-- </header> -->
 
         <main class="content">
@@ -126,14 +126,14 @@
                     </div>
                 </div>
             </section>
+        </main>
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
 
-            <footer class='footer'>
-                @@include('components/_footer.html')
-            </footer>
-
-            <div class="gallery-modal">
-                @@include('components/_gallery.html')
-            </div>
+        <div class="gallery-modal">
+            @@include('components/_gallery.html')
+        </div>
     </div>
     @@include('components/_scripts.html')
 </body>
