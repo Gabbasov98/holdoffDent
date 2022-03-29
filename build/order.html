@@ -1,0 +1,845 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
+    <link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="author" content="Разработка Digital-агентство WebReforma https://webreforma.ru" />
+    <title>Оформление заказа</title>
+</head>
+
+<body class="page">
+    <div class="wrapper">
+        <header class='header-order'>
+            <div class='container'>
+                <div class='header-order__inner'>
+                    <a href="" class="header-order__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header-order__right">
+                        <a href="tel:+7 (812) 493 33 33" class="header-order__phone">+7 (812) 493 33 33</a>
+                        <span class="header-order__text">Служба поддержки, онлайн заказ</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+
+
+            <section class='order'>
+                <div class='container'>
+                    <div class='order__inner'>
+                        <h1 class="order__title display3">Оформление заказа</h1>
+                        <div class="order__wrap">
+                            <div class="order__left">
+                                <h4 class="order__subtitle display4">Ваши данные</h4>
+                                <div class="order__tabs">
+                                    <div class="radio">
+                                        <input checked type='radio' id='orderTab1' value="1" name='orderTab' />
+                                        <label for='orderTab1'>Физическое лицо</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type='radio' id='orderTab2' value="2" name='orderTab' />
+                                        <label for='orderTab2'>Юридическое лицо</label>
+                                    </div>
+                                </div>
+                                <div class="order__content order__content--active" data-tab-path="1">
+                                    <div class="order__block">
+                                        <fieldset class='form-group order__field'>
+                                            <label>Имя и фамилия</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group order__field'>
+                                            <label>Номер телефона</label>
+                                            <input type='tel' />
+                                        </fieldset>
+                                        <fieldset class='form-group order__field'>
+                                            <label>Электронная почта</label>
+                                            <input type='email' />
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="order__block">
+                                        <h4 class="order__subtitle display4">Способ получения</h4>
+                                        <fieldset class='form-group order__field'>
+                                            <label>Населенный пункт</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <div class="order__field">
+                                            <div class="order__radio radio">
+                                                <input checked type='radio' class='radio' id='delivery1' name='delivery' />
+                                                <label for='delivery1'>
+                                                   <span class="order__radio-title">
+                                                        Доставка 
+                                                       <span class="grey-text2">(450 ₽)</span>
+                                                   </span>
+                                                   <span class="order__radio-desc grey-text2">Доставка осуществляется компанией-партнером. Оплата по факту доставки наличными.</span>
+                                                </label>
+                                            </div>
+                                            <div class="order__radio radio">
+                                                <input type='radio' class='radio' id='delivery2' name='delivery' />
+                                                <label for='delivery2'>
+                                                   <span class="order__radio-title">
+                                                    Самовывоз из наших магазинов  
+                                                       <span class="grey-text2">(бесплатно)</span>
+                                                   </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order__block">
+                                        <h4 class="order__subtitle display4">Адрес доставки</h4>
+                                        <fieldset class='form-group order__field'>
+                                            <label>Улица</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <div class="order__home order__field">
+                                            <fieldset class='form-group'>
+                                                <label>Дом</label>
+                                                <input type='text' />
+                                            </fieldset>
+                                            <fieldset class='form-group'>
+                                                <label>Корпус</label>
+                                                <input type='text' />
+                                            </fieldset>
+                                            <fieldset class='form-group'>
+                                                <label>Квартира</label>
+                                                <input type='text' />
+                                            </fieldset>
+                                            <fieldset class='form-group'>
+                                                <label>Подъезд</label>
+                                                <input type='text' />
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="order__block">
+                                        <h4 class="order__subtitle display4">Способ оплаты</h4>
+                                        <div class="order__field">
+                                            <div class="order__radio radio">
+                                                <input checked type='radio' class='radio' id='payMethod1' name='payMethod' />
+                                                <label for='payMethod1'>
+                                                   <span class="order__radio-title">
+                                                    При получении  
+                                                       <span class="grey-text2">(картой или наличными)</span>
+                                                   </span>
+                                                </label>
+                                            </div>
+                                            <div class="order__radio radio">
+                                                <input type='radio' class='radio' id='payMethod2' name='payMethod' />
+                                                <label for='payMethod2'>
+                                                   <span class="order__radio-title">
+                                                    Онлайн оплата
+                                                   </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order__block">
+                                        <h4 class="order__subtitle display4">Дополнительно</h4>
+                                        <div class="order__field order__switch">
+                                            <div class="switch">
+                                                <input checked type='checkbox' id='otherPerson' />
+                                                <label for='otherPerson'></label>
+                                            </div>
+                                            <span>Заказ будет получать другой человек</span>
+                                        </div>
+                                        <fieldset class='form-group order__field'>
+                                            <label>ФИО получателя</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group order__field'>
+                                            <textarea placeholder="Комментарий к заказу"></textarea>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="order__content" data-tab-path="2">
+                                    <div class="order__block">
+                                        <fieldset class='form-group order__field'>
+                                            <label>Имя и фамилия</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group order__field'>
+                                            <label>Номер телефона</label>
+                                            <input type='tel' />
+                                        </fieldset>
+                                        <fieldset class='form-group order__field'>
+                                            <label>Электронная почта</label>
+                                            <input type='email' />
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="order__block">
+                                        <h4 class="order__subtitle display4">Реквизиты организации</h4>
+                                        <fieldset class='form-group order__field'>
+                                            <label>ИНН организации или ИП</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group order__field'>
+                                            <label>КПП</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <fieldset class='form-group order__field'>
+                                            <label>Название организации</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="order__block">
+                                        <h4 class="order__subtitle display4">Способ получения</h4>
+                                        <fieldset class='form-group order__field'>
+                                            <label>Населенный пункт</label>
+                                            <input type='text' />
+                                        </fieldset>
+                                        <div class="order__field">
+                                            <div class="order__radio radio">
+                                                <input checked type='radio' class='radio' id='delivery3' name='delivery2' />
+                                                <label for='delivery3'>
+                                                   <span class="order__radio-title">
+                                                        Доставка 
+                                                       <span class="grey-text2">(450 ₽)</span>
+                                                   </span>
+                                                   <span class="order__radio-desc grey-text2">Доставка осуществляется компанией-партнером. Оплата по факту доставки наличными.</span>
+                                                </label>
+                                            </div>
+                                            <div class="order__radio radio">
+                                                <input type='radio' class='radio' id='delivery4' name='delivery2' />
+                                                <label for='delivery4'>
+                                                   <span class="order__radio-title">
+                                                    Самовывоз из наших магазинов  
+                                                       <span class="grey-text2">(бесплатно)</span>
+                                                   </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order__block">
+                                        <div class="order__block-top">
+                                            <h4 class="order__subtitle display4">Пункт выдачи</h4>
+                                            <a href="" class="order__map text-btn">Выбрать на карте</a>
+                                        </div>
+
+                                        <div class="order__address">
+                                            <div class="order__address-show">
+                                                <div class="order__radio radio">
+                                                    <input checked type='radio' class='radio' id='address1' name='address' />
+                                                    <label for='address1'>
+                                                        ул. Ленсовета, 22 
+                                                    </label>
+                                                </div>
+                                                <button class="order__address-btn btn">
+                                                    <span class="order__address-btn-show">Подробнее</span>
+                                                    <span class="order__address-btn-hide">Свернуть</span>
+                                                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1.5L4 4.5L7 1.5" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="order__address-hidden">
+                                                <div class="order__address-metro">
+                                                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.12239 2.86247C4.86756 1.99914 4.17584 2.09377 3.70289 2.49586C2.53786 3.57203 1.02089 5.83083 1.99176 9.08336C2.80485 11.8388 6.18813 13.601 6.18813 13.601H2.24413C2.24413 13.601 0.207674 11.3185 0.0256278 8.634C-0.204943 5.23994 1.15437 3.09937 2.73202 1.70393C4.21257 0.391224 5.62032 0.000976562 5.62032 0.000976562L8.49998 9.43598L11.3796 0.000976562C11.3796 0.000976562 12.7874 0.391225 14.2679 1.70393C15.8456 3.09937 17.2049 5.23994 16.9743 8.634C16.7923 11.3185 14.7558 13.601 14.7558 13.601H10.8118C10.8118 13.601 14.1948 11.8388 15.0082 9.08336C15.9791 5.83121 14.4621 3.5724 13.2971 2.49586C12.8238 2.09377 12.132 1.99914 11.8776 2.86247C11.0038 5.61795 8.50034 13.513 8.50034 13.513C8.50034 13.513 5.99688 5.61531 5.12311 2.86247H5.12239Z" fill="#FF8933"/>
+                                                    </svg>
+                                                    <span>Новочеркасская</span>
+                                                </div>
+                                                <div class="order__address-wrap">
+                                                    <div class="order__address-left">
+                                                        <a href="tel:+7 (812) 777-3677" class="order__address-phone">+7 (812) 777-3677</a>
+                                                        <a href="mailto:info@san-sanych.ru" class="order__address-email">info@san-sanych.ru</a>
+                                                    </div>
+                                                    <div class="order__address-right">
+                                                        <div class="order__address-day">
+                                                            <span>Будни:</span> 9:00 – 20:00
+                                                        </div>
+                                                        <div class="order__address-day">
+                                                            <span>Суббота:</span> 10:00 – 20:00
+                                                        </div>
+                                                        <div class="order__address-day">
+                                                            <span>Воскресенье:</span> 10:00 – 18:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__address">
+                                            <div class="order__address-show">
+                                                <div class="order__radio radio">
+                                                    <input type='radio' class='radio' id='address2' name='address' />
+                                                    <label for='address2'>
+                                                        ул. Луначарского, 5 
+                                                    </label>
+                                                </div>
+                                                <button class="order__address-btn btn">
+                                                    <span class="order__address-btn-show">Подробнее</span>
+                                                    <span class="order__address-btn-hide">Свернуть</span>
+                                                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1.5L4 4.5L7 1.5" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="order__address-hidden">
+                                                <div class="order__address-metro">
+                                                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.12239 2.86247C4.86756 1.99914 4.17584 2.09377 3.70289 2.49586C2.53786 3.57203 1.02089 5.83083 1.99176 9.08336C2.80485 11.8388 6.18813 13.601 6.18813 13.601H2.24413C2.24413 13.601 0.207674 11.3185 0.0256278 8.634C-0.204943 5.23994 1.15437 3.09937 2.73202 1.70393C4.21257 0.391224 5.62032 0.000976562 5.62032 0.000976562L8.49998 9.43598L11.3796 0.000976562C11.3796 0.000976562 12.7874 0.391225 14.2679 1.70393C15.8456 3.09937 17.2049 5.23994 16.9743 8.634C16.7923 11.3185 14.7558 13.601 14.7558 13.601H10.8118C10.8118 13.601 14.1948 11.8388 15.0082 9.08336C15.9791 5.83121 14.4621 3.5724 13.2971 2.49586C12.8238 2.09377 12.132 1.99914 11.8776 2.86247C11.0038 5.61795 8.50034 13.513 8.50034 13.513C8.50034 13.513 5.99688 5.61531 5.12311 2.86247H5.12239Z" fill="#FF8933"/>
+                                                    </svg>
+                                                    <span>Новочеркасская</span>
+                                                </div>
+                                                <div class="order__address-wrap">
+                                                    <div class="order__address-left">
+                                                        <a href="tel:+7 (812) 777-3677" class="order__address-phone">+7 (812) 777-3677</a>
+                                                        <a href="mailto:info@san-sanych.ru" class="order__address-email">info@san-sanych.ru</a>
+                                                    </div>
+                                                    <div class="order__address-right">
+                                                        <div class="order__address-day">
+                                                            <span>Будни:</span> 9:00 – 20:00
+                                                        </div>
+                                                        <div class="order__address-day">
+                                                            <span>Суббота:</span> 10:00 – 20:00
+                                                        </div>
+                                                        <div class="order__address-day">
+                                                            <span>Воскресенье:</span> 10:00 – 18:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__address">
+                                            <div class="order__address-show">
+                                                <div class="order__radio radio">
+                                                    <input type='radio' class='radio' id='address3' name='address' />
+                                                    <label for='address3'>
+                                                        ул. Таллинская, 7
+                                                    </label>
+                                                </div>
+                                                <button class="order__address-btn btn">
+                                                    <span class="order__address-btn-show">Подробнее</span>
+                                                    <span class="order__address-btn-hide">Свернуть</span>
+                                                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1.5L4 4.5L7 1.5" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="order__address-hidden">
+                                                <div class="order__address-metro">
+                                                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.12239 2.86247C4.86756 1.99914 4.17584 2.09377 3.70289 2.49586C2.53786 3.57203 1.02089 5.83083 1.99176 9.08336C2.80485 11.8388 6.18813 13.601 6.18813 13.601H2.24413C2.24413 13.601 0.207674 11.3185 0.0256278 8.634C-0.204943 5.23994 1.15437 3.09937 2.73202 1.70393C4.21257 0.391224 5.62032 0.000976562 5.62032 0.000976562L8.49998 9.43598L11.3796 0.000976562C11.3796 0.000976562 12.7874 0.391225 14.2679 1.70393C15.8456 3.09937 17.2049 5.23994 16.9743 8.634C16.7923 11.3185 14.7558 13.601 14.7558 13.601H10.8118C10.8118 13.601 14.1948 11.8388 15.0082 9.08336C15.9791 5.83121 14.4621 3.5724 13.2971 2.49586C12.8238 2.09377 12.132 1.99914 11.8776 2.86247C11.0038 5.61795 8.50034 13.513 8.50034 13.513C8.50034 13.513 5.99688 5.61531 5.12311 2.86247H5.12239Z" fill="#FF8933"/>
+                                                    </svg>
+                                                    <span>Новочеркасская</span>
+                                                </div>
+                                                <div class="order__address-wrap">
+                                                    <div class="order__address-left">
+                                                        <a href="tel:+7 (812) 777-3677" class="order__address-phone">+7 (812) 777-3677</a>
+                                                        <a href="mailto:info@san-sanych.ru" class="order__address-email">info@san-sanych.ru</a>
+                                                    </div>
+                                                    <div class="order__address-right">
+                                                        <div class="order__address-day">
+                                                            <span>Будни:</span> 9:00 – 20:00
+                                                        </div>
+                                                        <div class="order__address-day">
+                                                            <span>Суббота:</span> 10:00 – 20:00
+                                                        </div>
+                                                        <div class="order__address-day">
+                                                            <span>Воскресенье:</span> 10:00 – 18:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__address">
+                                            <div class="order__address-show">
+                                                <div class="order__radio radio">
+                                                    <input type='radio' class='radio' id='address4' name='address' />
+                                                    <label for='address4'>
+                                                        ул. Стахановцев, 10
+                                                    </label>
+                                                </div>
+                                                <button class="order__address-btn btn">
+                                                    <span class="order__address-btn-show">Подробнее</span>
+                                                    <span class="order__address-btn-hide">Свернуть</span>
+                                                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1.5L4 4.5L7 1.5" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="order__address-hidden">
+                                                <div class="order__address-metro">
+                                                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.12239 2.86247C4.86756 1.99914 4.17584 2.09377 3.70289 2.49586C2.53786 3.57203 1.02089 5.83083 1.99176 9.08336C2.80485 11.8388 6.18813 13.601 6.18813 13.601H2.24413C2.24413 13.601 0.207674 11.3185 0.0256278 8.634C-0.204943 5.23994 1.15437 3.09937 2.73202 1.70393C4.21257 0.391224 5.62032 0.000976562 5.62032 0.000976562L8.49998 9.43598L11.3796 0.000976562C11.3796 0.000976562 12.7874 0.391225 14.2679 1.70393C15.8456 3.09937 17.2049 5.23994 16.9743 8.634C16.7923 11.3185 14.7558 13.601 14.7558 13.601H10.8118C10.8118 13.601 14.1948 11.8388 15.0082 9.08336C15.9791 5.83121 14.4621 3.5724 13.2971 2.49586C12.8238 2.09377 12.132 1.99914 11.8776 2.86247C11.0038 5.61795 8.50034 13.513 8.50034 13.513C8.50034 13.513 5.99688 5.61531 5.12311 2.86247H5.12239Z" fill="#FF8933"/>
+                                                    </svg>
+                                                    <span>Новочеркасская</span>
+                                                </div>
+                                                <div class="order__address-wrap">
+                                                    <div class="order__address-left">
+                                                        <a href="tel:+7 (812) 777-3677" class="order__address-phone">+7 (812) 777-3677</a>
+                                                        <a href="mailto:info@san-sanych.ru" class="order__address-email">info@san-sanych.ru</a>
+                                                    </div>
+                                                    <div class="order__address-right">
+                                                        <div class="order__address-day">
+                                                            <span>Будни:</span> 9:00 – 20:00
+                                                        </div>
+                                                        <div class="order__address-day">
+                                                            <span>Суббота:</span> 10:00 – 20:00
+                                                        </div>
+                                                        <div class="order__address-day">
+                                                            <span>Воскресенье:</span> 10:00 – 18:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__block">
+                                            <h4 class="order__subtitle display4">Способ оплаты</h4>
+                                            <div class="order__field">
+                                                <div class="order__radio radio">
+                                                    <input checked type='radio' class='radio' id='payMethod3' name='payMethod2' />
+                                                    <label for='payMethod3'>
+                                                        Безналичный расчет
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order__block">
+                                            <h4 class="order__subtitle display4">Дополнительно</h4>
+                                            <fieldset class='form-group order__field'>
+                                                <textarea placeholder="Комментарий к заказу"></textarea>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__right">
+                                <div class="cart-info">
+                                    <div class="cart-info__items">
+                                        <div class="cart-info__item">
+                                            <span class="cart-info__title cart-info__title--blue">3 товара</span>
+                                            <span class="cart-info__desc">26 414 ₽</span>
+                                        </div>
+                                        <div class="cart-info__item">
+                                            <span class="cart-info__title">Скидка</span>
+                                            <span class="cart-info__desc cart-info__desc--red">–7 239 ₽</span>
+                                        </div>
+                                        <div class="cart-info__item">
+                                            <span class="cart-info__title">Доставка</span>
+                                            <span class="cart-info__desc">450 ₽</span>
+                                        </div>
+                                        <div class="cart-info__item cart-info__item--big">
+                                            <span class="cart-info__title">К оплате</span>
+                                            <span class="cart-info__desc cart-info__desc--big">20 240 ₽</span>
+                                        </div>
+                                    </div>
+                                    <button class="cart-info__btn btn btn-primary">Оформить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+    </div>
+    <!--  -->
+    <!-- Modal -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title display3">Заказать обратный звонок</h3>
+            <form action="" class="modal__form">
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Ваше имя" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Номер телефона*" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <textarea placeholder="Комментарий"></textarea>
+                </fieldset>
+                <button class="modal__form-btn btn btn-primary">Жду звонка</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade call-modal" id="callModal2" tabindex="-1" aria-labelledby="callModal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title display4">Мы позвоним вам в рабочее время</h3>
+            <div class="call-modal__times">
+                <div class="call-modal__time">
+                    <span class="call-modal__time-hour display3">9:00–20:00</span>
+                </div>
+                <div class="call-modal__time">
+                    <span class="call-modal__time-day">Cуббота</span>
+                    <span class="call-modal__time-hour display3">10:00–20:00</span>
+                </div>
+                <div class="call-modal__time">
+                    <span class="call-modal__time-day">Воскресенье</span>
+                    <span class="call-modal__time-hour display3">10:00–18:00</span>
+                </div>
+            </div>
+            <button class="call-modal__btn btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="login-modal__left">
+                <div class="login-modal__form-block">
+                    <h3 class="modal__title display3">Вход в личный кабинет</h3>
+                    <form action="" class="modal__form">
+                        <fieldset class='form-group'>
+                            <input type='text' placeholder="Электронная почта" />
+                        </fieldset>
+                        <fieldset class='form-group'>
+                            <input type='password' placeholder="Пароль" />
+                        </fieldset>
+                        <div class="login-modal__nav">
+                            <div class="login-modal__wrap">
+                                <div class="login-modal__check check">
+                                    <input type='checkbox' class='checkbox' id='login' />
+                                    <label for='login'>Запомнить меня</label>
+                                </div>
+                                <button type="button" class="login-modal__text-btn text-btn" data-bs-toggle="modal" data-bs-target="#forgotModal">Напомнить пароль</button>
+                            </div>
+                            <button class="login-modal__btn modal__form-btn btn btn-primary">Войти</button>
+                        </div>
+                    </form>
+                    <div class="login-modal__or">
+                        <span>Или</span>
+                    </div>
+                    <button class="login-modal__reg text-btn btn" data-bs-toggle="modal" data-bs-target="#regModal">Зарегистрироваться</button>
+                </div>
+            </div>
+            <div class="login-modal__right">
+                <div class="login-modal__socials">
+                    <p class="login-modal__socials-title modal__title display3">Войти через:</p>
+                    <div class="login-modal__socials-items">
+                        <a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/vk.svg" alt="">
+    <span>Вконтакте</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/ok.svg" alt="">
+    <span>Одноклассники</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/fb.svg" alt="">
+    <span>Facebook</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/google.svg" alt="">
+    <span>Google</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/twitter.svg" alt="">
+    <span>Twitter</span>
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade login-modal" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="login-modal__left">
+                <div class="login-modal__form-block">
+                    <h3 class="modal__title display3">Регистрация</h3>
+                    <form action="" class="modal__form">
+                        <fieldset class='form-group'>
+                            <input type='text' placeholder="Ваше имя*" />
+                        </fieldset>
+                        <fieldset class='form-group'>
+                            <input type='text' placeholder="Фамилия" />
+                        </fieldset>
+                        <fieldset class='form-group form-group--error'>
+                            <input type='email' placeholder="Электронная почта" />
+                            <div class="form-group__error">
+                                <span class="form-group__error-icon btn">!</span>
+                                <span class="form-group__error-text">Введите коректный адрес электронной почты</span>
+                            </div>
+                        </fieldset>
+                        <fieldset class='form-group form-group--error'>
+                            <input type='password' placeholder="Пароль*" />
+                            <div class="form-group__error">
+                                <span class="form-group__error-icon btn">!</span>
+                                <span class="form-group__error-text">Обязательное поле для заполнения</span>
+                            </div>
+                        </fieldset>
+                        <div class="login-modal__nav">
+                            <div class="login-modal__wrap">
+                                <div class="login-modal__check check">
+                                    <input type='checkbox' class='checkbox' id='reg' />
+                                    <label for='reg'>
+                                        <a href="" class="text-btn">Соглашение о конфиденциальности</a> предоставляемой и собираемой информации
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="login-modal__btn modal__form-btn btn btn-primary">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                    <div class="login-modal__or">
+                        <span>Или</span>
+                    </div>
+                    <button class="login-modal__reg text-btn btn" data-bs-toggle="modal" data-bs-target="#loginModal">Войти через электронную почту</button>
+                </div>
+            </div>
+            <div class="login-modal__right">
+                <div class="login-modal__socials">
+                    <p class="login-modal__socials-title modal__title display3">Войти через:</p>
+                    <div class="login-modal__socials-items">
+                        <a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/vk.svg" alt="">
+    <span>Вконтакте</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/ok.svg" alt="">
+    <span>Одноклассники</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/fb.svg" alt="">
+    <span>Facebook</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/google.svg" alt="">
+    <span>Google</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/twitter.svg" alt="">
+    <span>Twitter</span>
+</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade login-modal" id="forgotModal" tabindex="-1" aria-labelledby="forgotModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="login-modal__left">
+                <div class="login-modal__form-block">
+                    <h3 class="modal__title display3">Вход в личный кабинет</h3>
+                    <form action="" class="modal__form">
+                        <fieldset class='form-group'>
+                            <input type='email' placeholder="Электронная почта" />
+                        </fieldset>
+                        <button class="lmodal__form-btn modal__form-btn btn btn-primary">Востановить пароль</button>
+                    </form>
+                    <button class="login-modal__remember text-btn btn" data-bs-toggle="modal" data-bs-target="#loginModal">Я вспомнил свой пароль</button>
+                </div>
+            </div>
+            <div class="login-modal__right">
+                <div class="login-modal__socials">
+                    <p class="login-modal__socials-title modal__title display3">Войти через:</p>
+                    <div class="login-modal__socials-items">
+                        <a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/vk.svg" alt="">
+    <span>Вконтакте</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/ok.svg" alt="">
+    <span>Одноклассники</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/fb.svg" alt="">
+    <span>Facebook</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/google.svg" alt="">
+    <span>Google</span>
+</a>
+<a href="" class="login-modal__socials-item btn btn-grey">
+    <img src="img/twitter.svg" alt="">
+    <span>Twitter</span>
+</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade calc-modal" id="calcModal" tabindex="-1" aria-labelledby="calcModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title display3">Запросить расчёт</h3>
+            <form action="" class="modal__form calc-modal__form">
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Ваше имя" />
+                </fieldset>
+
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Электронная почта*" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Номер телефона*" />
+                </fieldset>
+
+                <fieldset class='form-group calc-modal__text'>
+                    <textarea placeholder="Описание"></textarea>
+                </fieldset>
+                <div class="calc-modal__file file-input">
+                    <input type="file">
+                    <label for="">
+                        <span>Добавить файлы</span>
+                        <span class="text-btn">Загрузить</span>
+                    </label>
+                </div>
+                <div class="calc-modal__check check calc-modal__full">
+                    <input type='checkbox' class='checkbox' id='calcCheck' />
+                    <label for='calcCheck'>
+                        <a href="" class="text-btn">Соглашение о конфиденциальности</a> предоставляемой и собираемой информации
+                    </label>
+                </div>
+                <button class="calc-modal__btn btn btn-primary calc-modal__full">Отправить запрос на расчёт</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal-backdrop show"></div> -->
+    <!--  -->
+    <div class="modal fade cart-modal" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title cart-modal__title display3">Поделиться корзиной</h3>
+            <p class="cart-modal__desc">Просто отправьте ссылку, и получатель сможет открыть список товаров из вашей текущей корзины</p>
+            <a href="" class="cart-modal__link text-btn">Ссылка</a>
+            <button class="cart-modal__btn modal__form-btn btn btn-primary">Скопировать ссылку</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade order-modal2" id="orderModal2" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="order-modal2__top">
+                <h3 class="order-modal2__title display3">В вашем заказе 3 товара</h3>
+                <button class="order-modal2__change text-btn">Изменить</button>
+            </div>
+            <div class="order-modal2__items">
+                <div class="order-modal2__item">
+                    <a href="" class="order-modal2__item-img">
+                        <img src="img/cart2.webp" alt="">
+                    </a>
+                    <div class="order-modal2__item-content">
+                        <a href="" class="order-modal2__item-title">Кран шаровый со сгоном Tiemme Buran 3/4" (черная бабочка) (2450005)</a>
+                        <div class="order-modal2__item-code copy-code">
+                            Код: <span> 22283</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V10C4.5 10.5523 4.94772 11 5.5 11H10C10.5523 11 11 10.5523 11 10V5.5C11 4.94772 10.5523 4.5 10 4.5Z" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 7.5H2C1.73478 7.5 1.48043 7.39464 1.29289 7.20711C1.10536 7.01957 1 6.76522 1 6.5V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6.5C6.76522 1 7.01957 1.10536 7.20711 1.29289C7.39464 1.48043 7.5 1.73478 7.5 2V2.5" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="order-modal2__item-price">800 ₽</span>
+                </div>
+                <div class="order-modal2__item">
+                    <a href="" class="order-modal2__item-img">
+                        <img src="img/cart.webp" alt="">
+                    </a>
+                    <div class="order-modal2__item-content">
+                        <a href="" class="order-modal2__item-title">Кран шаровый со сгоном Tiemme Buran 3/4" (черная бабочка) (2450005)</a>
+                        <div class="order-modal2__item-code copy-code">
+                            Код: <span> 22283</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V10C4.5 10.5523 4.94772 11 5.5 11H10C10.5523 11 11 10.5523 11 10V5.5C11 4.94772 10.5523 4.5 10 4.5Z" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 7.5H2C1.73478 7.5 1.48043 7.39464 1.29289 7.20711C1.10536 7.01957 1 6.76522 1 6.5V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6.5C6.76522 1 7.01957 1.10536 7.20711 1.29289C7.39464 1.48043 7.5 1.73478 7.5 2V2.5" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="order-modal2__item-price">800 ₽</span>
+                </div>
+                <div class="order-modal2__item">
+                    <a href="" class="order-modal2__item-img">
+                        <img src="img/cart3.webp" alt="">
+                    </a>
+                    <div class="order-modal2__item-content">
+                        <a href="" class="order-modal2__item-title">Кран шаровый со сгоном Tiemme Buran 3/4" (черная бабочка) (2450005)</a>
+                        <div class="order-modal2__item-code copy-code">
+                            Код: <span> 22283</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V10C4.5 10.5523 4.94772 11 5.5 11H10C10.5523 11 11 10.5523 11 10V5.5C11 4.94772 10.5523 4.5 10 4.5Z" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 7.5H2C1.73478 7.5 1.48043 7.39464 1.29289 7.20711C1.10536 7.01957 1 6.76522 1 6.5V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6.5C6.76522 1 7.01957 1.10536 7.20711 1.29289C7.39464 1.48043 7.5 1.73478 7.5 2V2.5" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="order-modal2__item-price">800 ₽</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal-backdrop show"></div> --> <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

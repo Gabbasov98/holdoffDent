@@ -1,0 +1,295 @@
+@import "vars";
+.footer {
+    background-color: $dark;
+    padding: 36px 0 44px;
+    &-top {
+        &__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        &-item {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            &:hover {
+                color: $lightBlue;
+            }
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        &-item {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid rgba(101, 127, 146, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+            &:hover {
+                background-color: $lightBlue;
+                path {
+                    fill: $blue;
+                }
+            }
+        }
+    }
+    &__pay {
+        display: flex;
+        align-items: center;
+        &-item {
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
+        }
+    }
+    &-bottom {
+        margin-top: 40px;
+        &__inner {
+            padding-top: 40px;
+            border-top: 1px solid rgba(#657F92, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__logo {
+        width: 214px;
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__address {
+        max-width: 210px;
+    }
+    &__address,
+    &__time {
+        display: flex;
+        font-size: 14px;
+        line-height: 26px;
+        color: #B0C8D9;
+        svg {
+            margin-right: 24px;
+        }
+    }
+    &__time {
+        margin-left: 70px;
+        &-item {
+            display: block;
+            line-height: 26px;
+        }
+    }
+    &__phone {
+        margin-left: 70px;
+        &-link {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 26px;
+            color: #FFFFFF;
+            svg {
+                margin-right: 24px;
+            }
+            &:hover {
+                color: $blue;
+            }
+        }
+        &-btn {
+            width: 133px;
+            height: 28px;
+            font-size: 14px;
+            border-radius: 8px;
+            margin-left: 44px;
+            margin-top: 6px;
+            color: $blue;
+            border: 1px solid rgba(101, 127, 146, 0.5);
+            background-color: transparent;
+        }
+    }
+    &__btn {
+        width: 213px;
+        height: 56px;
+        border-radius: 60px;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-left: 100px;
+        background: #273353;
+        color: $blue;
+        &:hover {
+            background: $blue;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .footer {
+        &__nav {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+        }
+        &__socials {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+        &__pay {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .footer {
+        &__phone,
+        &__time {
+            margin-left: 20px;
+        }
+        &__btn {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        &__nav {
+            flex-wrap: wrap;
+            margin-top: -10px;
+            &-item {
+                margin-top: 10px;
+            }
+        }
+        &__logo {
+            width: 180px;
+        }
+        &__address {
+            max-width: 170px;
+            font-size: 12px;
+            line-height: 140%;
+            svg {
+                margin-right: 12px;
+                width: 17px;
+                height: 18px;
+            }
+        }
+        &__phone,
+        &__time {
+            font-size: 12px;
+            svg {
+                margin-right: 12px;
+                width: 17px;
+                height: 18px;
+            }
+            &-item {
+                line-height: 140%;
+            }
+        }
+        &__phone {
+            &-link {
+                font-size: 13px;
+            }
+            &-btn {
+                margin-left: 29px;
+            }
+        }
+        &__btn {
+            width: 190px;
+            height: 45px;
+            font-size: 12px;
+            margin-left: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        position: relative;
+        padding: 40px 0;
+        .container {
+            padding: 0;
+        }
+        &-top {
+            padding-top: 150px;
+        }
+        &-bottom {
+            margin-top: 32px;
+            padding-bottom: 80px;
+            &__inner {
+                padding-top: 32px;
+            }
+        }
+        &__nav,
+        &__time,
+        &__address {
+            display: none;
+        }
+        &__phone {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            &-link {
+                justify-content: center;
+            }
+            &-btn {
+                width: 214px;
+                height: 56px;
+                border-radius: 60px;
+                font-weight: 600;
+                font-size: 13px;
+                margin: 20px auto 0;
+            }
+        }
+        &__socials {
+            justify-content: center;
+            width: 100%;
+        }
+        &__pay {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            justify-content: center;
+        }
+        &__logo {
+            width: 190px;
+            margin: 0 auto;
+        }
+        &__btn {
+            display: none;
+        }
+    }
+}

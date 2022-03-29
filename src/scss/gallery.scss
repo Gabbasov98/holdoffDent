@@ -1,0 +1,123 @@
+@import "vars";
+.gallery {
+    position: relative;
+    z-index: 3;
+    width: 982px;
+    max-width: 100%;
+    &__close {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        z-index: 3;
+        background-color: transparent;
+    }
+    &-modal {
+        opacity: 0;
+        pointer-events: none;
+        z-index: 30;
+        background-color: rgba($black, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 107px;
+        &--active {
+            opacity: 1;
+            pointer-events: unset;
+        }
+    }
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper {
+        &-slide {
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-button {
+            &-prev {
+                left: -70px;
+                transform: translateX(-50%)
+            }
+            &-next {
+                right: -70px;
+                transform: translateX(50%)
+            }
+        }
+    }
+    &__big {
+        position: relative;
+        .swiper-slide {
+            height: calc(100vh - 310px);
+        }
+    }
+    &__small {
+        margin-top: 20px;
+        .swiper-slide {
+            height: 70px;
+            width: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery {
+        width: 700px;
+        &__big {
+            .swiper {
+                &-slide {
+                    max-height: 700px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gallery {
+        width: 100%;
+        height: 100%;
+        &-modal {
+            padding: 140px 0;
+        }
+        &__small {
+            display: none;
+        }
+        &__close {
+            top: 16px;
+            right: 16px;
+        }
+        .swiper {
+            &-slide {
+                height: unset;
+            }
+            &-button {
+                &-prev {
+                    top: 100%;
+                    left: 50%;
+                    margin-top: 52px;
+                    transform: translateX(calc(-100% - 24px));
+                }
+                &-next {
+                    top: 100%;
+                    right: 50%;
+                    margin-top: 52px;
+                    transform: translateX(calc(100% + 24px));
+                }
+            }
+        }
+    }
+}

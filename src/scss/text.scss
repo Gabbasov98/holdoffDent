@@ -1,0 +1,27 @@
+.display1 {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 100%;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.display2 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+    .display1,
+    .display2 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .display1,
+    .display2 {
+        font-size: 32px;
+    }
+}
