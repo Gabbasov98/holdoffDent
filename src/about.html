@@ -1,0 +1,77 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"О клинике", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+
+    <div class="wrapper">
+
+        @@include('components/_header.html',{"current":"contacts"})
+        <!-- </header> -->
+
+        <main class="content">
+
+
+            <section class='about-page'>
+                <div class='container'>
+                    <div class='about-page__inner'>
+                        <h1 class="about-page__title display2">О клинике</h1>
+                        <div class="about-page__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus ut velit scelerisque
+                            iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non. Nec quis dolor auctor a nulla sed amet.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='achievement'>
+                <div class='container'>
+                    <div class='achievement__inner'>
+                        <div class="achievement__info">
+                            <h2 class="achievement__title display2">Документы</h2>
+                            <div class="achievement__desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et mauris, varius duis tempus. Ut augue elit facilisis ullamcorper venenatis mattis. Feugiat pharetra, semper semper aliquet. </p>
+                                <p>Laoreet donec platea nibh scelerisque gravida nibh elit amet. Nisi, pellentesque dis id duis nulla eu scelerisque morbi. </p>
+                            </div>
+                        </div>
+                        <div class="achievement__slider">
+                            @@include('components/_achievement-slider.html')
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='about'>
+                @@include('components/_about.html')
+            </section>
+
+            <section class='about-info'>
+                <div class='container'>
+                    <h2 class="about-info__title display2">Заголовок</h2>
+                    <div class="about-info__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus ut velit scelerisque
+                            iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non. Nec quis dolor auctor a nulla sed amet.
+                            Convallis morbi nunc commodo quis quis aliquet. Dignissim in ac integer dolor. Facilisis tristique libero bibendum mattis et, ut molestie dui. Pulvinar vestibulum maecenas nulla nec nulla elit ut.</p>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus ut velit scelerisque
+                            iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non. Nec quis dolor auctor a nulla sed amet.
+                            Convallis morbi nunc commodo quis quis aliquet. Dignissim in ac integer dolor. Facilisis tristique libero bibendum mattis et, ut molestie dui. Pulvinar vestibulum maecenas nulla nec nulla elit ut.</p>
+                        <ul class="grey-text">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque </li>
+                        </ul>
+                        <div class="about-info__hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus ut velit scelerisque
+                            iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+
+        <div class="gallery-modal">
+            @@include('components/_gallery.html')
+        </div>
+    </div>
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+@import 'vars';
+.contacts {
+    padding: 60px 0;
+    &__items {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 48px;
+    }
+    &__item {
+        display: flex;
+        svg {
+            margin-right: 24px;
+        }
+        &-title {
+            font-size: 17px;
+            line-height: 165%;
+            color: $grey;
+        }
+        &-bottom {
+            display: block;
+            font-size: 17px;
+            line-height: 165%;
+            margin-top: 16px;
+            p {
+                line-height: 165%;
+            }
+        }
+        a {
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    &__map {
+        margin-top: 60px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contacts {
+        &__map {
+            margin-top: 54px;
+            height: 606px;
+            width: calc(100% + 40px);
+            margin-left: -20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacts {
+        padding: 54px 0 0;
+        &__items {
+            margin-top: 32px;
+        }
+        &__item {
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+            &-title,
+            &-bottom,
+            &-bottom p {
+                font-size: 14px;
+                line-height: 157%;
+            }
+            &-bottom {
+                margin-top: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"До и после", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+
+    <div class="wrapper">
+
+        @@include('components/_header.html',{"current":""})
+        <!-- </header> -->
+
+        <main class="content">
+
+
+            <section class='doctors-page'>
+                <div class='container'>
+                    <div class="doctors-page__group">
+                        <h1 class="doctors-page__title display2">Врачи-ортопеды</h1>
+                        <div class='doctors-page__items'>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor2.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor3.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor3.webp"})
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctors-page__group">
+                        <h1 class="doctors-page__title display2">Врачи-ортопеды</h1>
+                        <div class='doctors-page__items'>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor2.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor3.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor3.webp"})
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctors-page__group">
+                        <h1 class="doctors-page__title display2">Врачи-ортопеды</h1>
+                        <div class='doctors-page__items'>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor2.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor3.webp"})
+                            </div>
+                            <div class="doctors-page__item">
+                                @@include('components/_doctor-card.html',{"img":"img/doctor3.webp"})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+
+        <div class="gallery-modal">
+            @@include('components/_gallery.html')
+        </div>
+    </div>
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

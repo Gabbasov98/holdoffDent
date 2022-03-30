@@ -161,4 +161,19 @@ $(document).ready(function() {
         // подставляем в src параметр из data
         iframe.attr('src', src);
     }
+
+
+    $(".service-price__all").click(function() {
+        $(this).toggleClass("service-price__all--active")
+        $(".service-price__item--hidden").toggleClass("service-price__item--show")
+    })
+
+    $(".service .tab").click(function() {
+        doctorsSlider()
+        $(".work-card").twentytwenty();
+    })
+
+    $(".prices__item-show").click(function() {
+        $(this).siblings(".prices__item-hidden").slideToggle()
+    })
 })

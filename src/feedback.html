@@ -1,0 +1,83 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Отзывы", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+
+    <div class="wrapper">
+
+        @@include('components/_header.html',{"current":"feedback"})
+        <!-- </header> -->
+
+        <main class="content">
+
+            <section class='feedback'>
+                <div class='container'>
+                    <div class="feedback__inner">
+                        <h1 class='feedback__title display2'>Отзывы</h1>
+                        <fieldset class='form-group feedback__select'>
+                            <div class="custom-select">
+                                <input disabled type="text" value="Все врачи">
+                                <div class="custom-select__dropdown">
+                                    <div class="custom-select__dropdown-inner">
+                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">Все врачи</div>
+                                        <div class="custom-select__dropdown-item">Все врачи 2</div>
+                                        <div class="custom-select__dropdown-item">Все врачи 3</div>
+                                        <div class="custom-select__dropdown-item">Все врачи 4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="feedback__items">
+                            <div class="feedback__item">
+                                @@include('components/_feedback-card2.html')
+                            </div>
+                            <div class="feedback__item">
+                                @@include('components/_feedback-card2.html')
+                            </div>
+                            <div class="feedback__item">
+                                @@include('components/_feedback-card2.html')
+                            </div>
+                            <div class="feedback__item">
+                                @@include('components/_feedback-card2.html')
+                            </div>
+                            <div class="feedback__item">
+                                @@include('components/_feedback-card2.html')
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <a href="" class="pagination__btn pagination__btn--disabled">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2188 14.8125L11.8438 14.2188C11.9688 14.0625 11.9688 13.8125 11.8438 13.6875L6.1875 8L11.8438 2.34375C11.9688 2.21875 11.9688 1.96875 11.8438 1.8125L11.2188 1.21875C11.0625 1.0625 10.8438 1.0625 10.6875 1.21875L4.125 7.75C4 7.90625 4 8.125 4.125 8.28125L10.6875 14.8125C10.8438 14.9688 11.0625 14.9688 11.2188 14.8125Z" fill="#2581C4"/>
+                            </svg>
+                            </a>
+                            <a href="" class="pagination__item pagination__item--active">1</a>
+                            <a href="" class="pagination__item">2</a>
+                            <a href="" class="pagination__item">3</a>
+                            <a href="" class="pagination__btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.75 1.21875L4.125 1.8125C4 1.96875 4 2.21875 4.125 2.34375L9.78125 8L4.125 13.6875C4 13.8125 4 14.0625 4.125 14.2188L4.75 14.8125C4.90625 14.9688 5.125 14.9688 5.28125 14.8125L11.8438 8.28125C11.9688 8.125 11.9688 7.90625 11.8438 7.75L5.28125 1.21875C5.125 1.0625 4.90625 1.0625 4.75 1.21875Z" fill="#2581C4"/>
+                            </svg>
+                            </a>
+                        </div>
+                        <div class="doctor__licensy">
+                            <h3 class="doctor__licensy-title display3">Лицензия</h3>
+                            <div class="doctor__licensy-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus integer ipsum tortor, nulla et accumsan. Accumsan lorem eget volutpat, aliquet massa vulputate. Tortor sed tortor sodales diam nunc, non nam. Enim tellus egestas
+                                et ornare. Donec lorem nunc etiam habitant libero eu natoque. At neque odio tempor orci mauris morbi fermentum phasellus suspendisse. Sit mattis urna at blandit dolor, semper ullamcorper. In consequat volutpat sed quis.
+                                Dignissim etiam sollicitudin tincidunt risus libero quisque condimentum tincidunt. Etiam lacus, scelerisque nam vel. Vitae massa mattis mauris vel hac aliquam et posuere. Ac mattis habitant feugiat lorem malesuada.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+
+        <div class="gallery-modal">
+            @@include('components/_gallery.html')
+        </div>
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

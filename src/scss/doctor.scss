@@ -217,6 +217,38 @@
     }
 }
 
+.doctors-page {
+    padding: 100px 0;
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 124px;
+        }
+    }
+    &__title {
+        color: $green;
+    }
+    &__items {
+        margin-top: 124px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .doctors-page {
+        &__items {
+            margin-top: 55px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__group {
+            &:not(:last-child) {
+                margin-bottom: 90px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1400px) {
     .doctor {
         &__left {
@@ -234,6 +266,12 @@
         }
         &__video-player {
             height: 500px;
+        }
+    }
+    .doctors-page {
+        padding: 54px 0;
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
@@ -341,9 +379,15 @@
             }
         }
         &__licensy {
+            margin-top: 90px;
             &-desc {
                 margin-top: 40px;
             }
+        }
+    }
+    .doctors-page {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

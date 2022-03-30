@@ -1,0 +1,28 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Услуги", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+
+    <div class="wrapper">
+
+        @@include('components/_header.html',{"current":"service"})
+        <!-- </header> -->
+
+        <main class="content">
+
+
+            <section class='services services--page'>
+                @@include('components/_services.html')
+            </section>
+        </main>
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+
+        <div class="gallery-modal">
+            @@include('components/_gallery.html')
+        </div>
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

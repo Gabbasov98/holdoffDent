@@ -1,0 +1,66 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"До и после", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+
+    <div class="wrapper">
+
+        @@include('components/_header.html',{"current":"works"})
+        <!-- </header> -->
+
+        <main class="content">
+
+
+            <section class='after-before'>
+                <div class='container'>
+                    <h1 class="after-before__title display2">До и после</h1>
+                    <div class="after-before__group">
+                        <div class="after-before__subtitle display3">
+                            <img src="img/service.svg" alt="">
+                            <span>Имплантация зубов</span>
+                        </div>
+                        <div class="after-before__items">
+                            <div class="after-before__item">
+                                @@include('components/_work-card.html')
+                            </div>
+                            <div class="after-before__item">
+                                @@include('components/_work-card.html')
+                            </div>
+                            <div class="after-before__item">
+                                @@include('components/_work-card.html')
+                            </div>
+                        </div>
+                    </div>
+                    <div class="after-before__group">
+                        <div class="after-before__subtitle display3">
+                            <img src="img/service9.svg" alt="">
+                            <span>Костная пластика</span>
+                        </div>
+                        <div class="after-before__items">
+                            <div class="after-before__item">
+                                @@include('components/_work-card.html')
+                            </div>
+                            <div class="after-before__item">
+                                @@include('components/_work-card.html')
+                            </div>
+                            <div class="after-before__item">
+                                @@include('components/_work-card.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+
+        <div class="gallery-modal">
+            @@include('components/_gallery.html')
+        </div>
+    </div>
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

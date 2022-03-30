@@ -307,8 +307,8 @@
     }
     .swiper {
         &-container {
-            width: calc(100% - 160px);
-            margin: 0 32px 0 0;
+            width: calc(100% - 192px);
+            margin: 0 32px;
             padding-left: 32px;
         }
         &-slide {
@@ -332,6 +332,9 @@
                     pointer-events: unset;
                 }
             }
+            &-prev {
+                // transition: all .0s;
+            }
         }
         &-button-prev,
         &-button-next {
@@ -347,9 +350,11 @@
 
 .map {
     padding: 120px 0;
-    img {
-        width: 100%;
-        display: block;
+    &__inner {
+        img {
+            width: 100%;
+            display: block;
+        }
     }
 }
 
@@ -640,14 +645,16 @@
         height: 606px;
         padding: 0;
         overflow: hidden;
-        img {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
+        &__inner {
+            img {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+            }
         }
     }
 }

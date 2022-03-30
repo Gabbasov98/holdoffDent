@@ -1,0 +1,47 @@
+.feedback {
+    padding: 100px 0;
+    &__inner {
+        max-width: 1130px;
+    }
+    &__select {
+        margin-top: 62px;
+        width: 255px;
+        input {
+            background-color: #fff;
+        }
+    }
+    &__items {}
+    &__item {
+        margin-top: 50px;
+    }
+    .pagination {
+        padding-left: 190px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .feedback {
+        padding: 54px 0;
+        &__select {
+            margin-top: 54px;
+        }
+        &__item {
+            &:first-child {
+                margin-top: 32px;
+            }
+        }
+        .pagination {
+            padding-left: 0;
+            justify-content: center;
+            margin-top: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .feedback {
+        &__select {
+            width: 100%;
+        }
+    }
+}

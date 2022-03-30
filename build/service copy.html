@@ -64,7 +64,7 @@
     <div class='container'>
         <div class='header-bottom__inner'>
             <nav class="nav">
-                <div class="nav__item nav__item--dropdown ">
+                <div class="nav__item nav__item--dropdown nav__item--active-link">
                     <div class="nav__item-show">
                         <a href="" class="nav__item-link">Услуги </a>
                     </div>
@@ -137,14 +137,14 @@
                         </div>
                     </div>
                 </div>
-                <a href="doctor.html" class="nav__item nav__item--active-link">Врачи</a>
+                <a href="doctor.html" class="nav__item ">Врачи</a>
                 <a href="" class="nav__item">Технологии</a>
-                <a href="" class="nav__item ">отзывы</a>
-                <a href="works.html" class="nav__item ">До и после</a>
+                <a href="" class="nav__item">отзывы</a>
+                <a href="" class="nav__item">До и после</a>
                 <a href="" class="nav__item">Акции</a>
                 <a href="" class="nav__item">Клиника</a>
-                <a href="prices.html" class="nav__item ">Цены</a>
-                <a href="contacts.html" class="nav__item ">Контакты</a>
+                <a href="" class="nav__item">Цены</a>
+                <a href="" class="nav__item">Контакты</a>
             </nav>
 
             <div class="header__search">
@@ -172,54 +172,98 @@
 
         <main class="content">
 
-
-            <section class='doctor'>
+            <section class='service tab-parent'>
                 <div class='container'>
-                    <div class='doctor__inner'>
-                        <div class="doctor__left">
-                            <div class="doctor__top">
-                                <div class="doctor__img">
-                                    <img src="img/doctor.webp" alt="">
-                                </div>
-                                <div class="doctor__top-right">
-                                    <h1 class="doctor__title display3">Константинов Константин Александрович</h1>
-                                    <div class="doctor__top-item">
-                                        <p class="grey-text">Специализация</p>
-                                        <p>Хирург-имплантолог, пародонтолог</p>
-                                    </div>
-                                    <div class="doctor__top-item">
-                                        <p class="grey-text">Квалификация</p>
-                                        <p>Кандидат медицинских наук</p>
-                                    </div>
-                                    <div class="doctor__top-item">
-                                        <p class="grey-text">Стаж работы</p>
-                                        <p>14 лет</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class='service__inner'>
+                        <div class="service__left">
+                            <h1 class="service__title display2">Имплантация зубов</h1>
+                            <div class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus ut velit scelerisque
+                                iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non. Nec quis dolor auctor a nulla sed
+                                amet. Convallis morbi nunc commodo quis quis aliquet. Dignissim in ac integer dolor. Facilisis tristique libero bibendum mattis et, ut molestie dui. Pulvinar vestibulum maecenas nulla nec nulla elit ut.</div>
 
-                            <div class="doctor__info">
-                                <div class="doctor__info-group">
-                                    <p class="doctor__info-title grey-text">Специализация</p>
-                                    <p class="doctor__info-desc">Ранняя диагностика зубочелюстных аномалий</p>
-                                    <p class="doctor__info-desc">Исправление прикуса у детей, подростков и взрослых пациентов с помощь ортодонтических аппаратов </p>
-                                    <p class="doctor__info-desc">Лечение на съемной и несъемной технике</p>
-                                </div>
-                                <div class="doctor__info-group">
-                                    <p class="doctor__info-title grey-text">Образование</p>
-                                    <p class="doctor__info-desc">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
-                                    <p class="doctor__info-desc">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
-                                    <p class="doctor__info-desc">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
-                                    <p class="doctor__info-desc doctor__info-desc--hidden">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
-                                    <p class="doctor__info-desc doctor__info-desc--hidden">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
-                                    <p class="doctor__info-desc doctor__info-desc--hidden">1991 г. — Окончил Московский медицинский стоматологический институт им. Н. А. Семашко</p>
-                                    <button class="doctor__info-all">
-                                        <span class="doctor__info-all-show">Читать полностью</span>
-                                        <span class="doctor__info-all-hide">Скрыть</span>
-                                    </button>
-                                </div>
+                            <div class="service__tabs tabs">
+                                <div class="tab tab--active" data-tab-path="1">описание</div>
+                                <div class="tab" data-tab-path="2">стоиомсть </div>
+                                <div class="tab" data-tab-path="3">врачи </div>
+                                <div class="tab" data-tab-path="4">работы </div>
                             </div>
-
+                            <div class="service__content">
+                                <div class="tab__content tab__content--active" data-tab-path="1">
+                                    <div class="service-desc">
+                                        <div class="service__subtitle">Описание</div>
+                                        <div class="service-desc__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus
+                                                ut velit scelerisque iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non.
+                                                Nec quis dolor auctor a nulla sed amet. Convallis morbi nunc commodo quis quis aliquet. Dignissim in ac integer dolor. Facilisis tristique libero bibendum mattis et, ut molestie dui. Pulvinar vestibulum
+                                                maecenas nulla nec nulla elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus
+                                                ut velit scelerisque iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non.
+                                                Nec quis dolor auctor a nulla sed amet. Convallis morbi nunc commodo quis quis aliquet. Dignissim in ac integer dolor. Facilisis tristique libero bibendum mattis et, ut molestie dui. Pulvinar vestibulum
+                                                maecenas nulla nec nulla elit ut.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab__content" data-tab-path="2">
+                                    <div class="service-price">
+                                        <div class="service__subtitle">Стоимость</div>
+                                        <div class="service-price__items">
+                                            <div class="service-price__item">
+                                                <div class="service-price__item-left">
+    <div class="service-price__title">Имплантация</div>
+    <div class="service-price__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. </div>
+</div>
+<div class="service-price__num">5 000 руб.</div>
+                                            </div>
+                                            <div class="service-price__item">
+                                                <div class="service-price__item-left">
+    <div class="service-price__title">Имплантация</div>
+    <div class="service-price__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. </div>
+</div>
+<div class="service-price__num">5 000 руб.</div>
+                                            </div>
+                                            <div class="service-price__item">
+                                                <div class="service-price__item-left">
+    <div class="service-price__title">Имплантация</div>
+    <div class="service-price__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. </div>
+</div>
+<div class="service-price__num">5 000 руб.</div>
+                                            </div>
+                                            <div class="service-price__item">
+                                                <div class="service-price__item-left">
+    <div class="service-price__title">Имплантация</div>
+    <div class="service-price__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. </div>
+</div>
+<div class="service-price__num">5 000 руб.</div>
+                                            </div>
+                                            <div class="service-price__item service-price__item--hidden">
+                                                <div class="service-price__item-left">
+    <div class="service-price__title">Имплантация</div>
+    <div class="service-price__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. </div>
+</div>
+<div class="service-price__num">5 000 руб.</div>
+                                            </div>
+                                            <div class="service-price__item service-price__item--hidden">
+                                                <div class="service-price__item-left">
+    <div class="service-price__title">Имплантация</div>
+    <div class="service-price__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. </div>
+</div>
+<div class="service-price__num">5 000 руб.</div>
+                                            </div>
+                                        </div>
+                                        <button class="service-price__all btn">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7812 7.84375L14.1875 7.21875C14.0312 7.0625 13.7812 7.0625 13.6562 7.21875L8.8125 12.0625V1.375C8.8125 1.1875 8.625 1 8.4375 1H7.5625C7.34375 1 7.1875 1.1875 7.1875 1.375V12.0625L2.3125 7.21875C2.1875 7.0625 1.9375 7.0625 1.78125 7.21875L1.1875 7.84375C1.03125 7.96875 1.03125 8.21875 1.1875 8.375L7.71875 14.9062C7.875 15.0625 8.09375 15.0625 8.25 14.9062L14.7812 8.375C14.9375 8.21875 14.9375 7.96875 14.7812 7.84375Z" fill="#2581C4"/>
+                                            </svg>
+                                            <span class="service-price__all-show">смотреть все цены</span>
+                                            <span class="service-price__all-hide">скрыть</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tab__content" data-tab-path="3">ВРАЧИ</div>
+                                <div class="tab__content" data-tab-path="4">РАБОТЫ</div>
+                            </div>
+                        </div>
+                        <div class="service__right">
                             <form class="doctor-form">
                                 <div class="doctor-form__inner">
                                     <p class="doctor-form__title">Запись онлайн</p>
@@ -270,111 +314,150 @@
                                     </div>
                                 </div>
                             </form>
-
-                            <div class="doctor__work">
-                                <h3 class="doctor__work-title display3">Работы</h3>
-                                <div class="doctor__work-grid">
-                                    <div class="work-card">
-    <img src="img/work1.webp" alt="">
-    <img src="img/work2.webp" alt="">
-</div>
-                                    <!--  -->
-                                    <div class="work-card">
-    <img src="img/work1.webp" alt="">
-    <img src="img/work2.webp" alt="">
-</div>
-                                    <!--  -->
-                                    <div class="work-card">
-    <img src="img/work1.webp" alt="">
-    <img src="img/work2.webp" alt="">
-</div>
-                                    <!--  -->
-                                    <div class="work-card">
-    <img src="img/work1.webp" alt="">
-    <img src="img/work2.webp" alt="">
-</div>
-                                    <!--  -->
-                                </div>
-                            </div>
-
-                            <div class="doctor__video">
-                                <h3 class="doctor__video-title display3">Видео</h3>
-                                <div class="doctor__video-player video_wrapper video_wrapper_full js-videoWrapper">
-                                    <iframe class="videoIframe js-videoIframe" width="100%" height="100%" src="" data-src="https://www.youtube.com/embed/mRjjW8Lj8Kc?list=RDmRjjW8Lj8Kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                    <button style="background-image: url('img/video.jpg');" class="videoPoster js-videoPoster"></button>
-                                </div>
-                            </div>
-
-                            <div class="doctor__feedback">
-                                <h3 class="doctor__feedback-title display3">Отзывы</h3>
-                                <div class="doctor__feedback-items">
-                                    <div class="doctor__feedback-item">
-                                        <div class="feedback-card">
-    <div class="feedback-card__left">
-        <span class="feedback-card__name">Константин К.</span>
-        <span class="feedback-card__date">12.12.2022</span>
-    </div>
-    <div class="feedback-card__right">
-        <div class="feedback-card__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus integer ipsum tortor, nulla et accumsan. Accumsan lorem eget volutpat, aliquet massa vulputate. Tortor sed tortor sodales diam nunc, non nam. Enim tellus egestas et ornare. Donec lorem nunc
-            etiam habitant libero eu natoque. At neque odio tempor orci mauris morbi fermentum phasellus suspendisse. Sit mattis urna at blandit dolor, semper ullamcorper.
-        </div>
-        <div class="feedback-card__by">
-            Источник <a href="">Prodoctorov.ru</a>
-        </div>
-    </div>
-</div>
-                                    </div>
-                                    <div class="doctor__feedback-item">
-                                        <div class="feedback-card">
-    <div class="feedback-card__left">
-        <span class="feedback-card__name">Константин К.</span>
-        <span class="feedback-card__date">12.12.2022</span>
-    </div>
-    <div class="feedback-card__right">
-        <div class="feedback-card__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus integer ipsum tortor, nulla et accumsan. Accumsan lorem eget volutpat, aliquet massa vulputate. Tortor sed tortor sodales diam nunc, non nam. Enim tellus egestas et ornare. Donec lorem nunc
-            etiam habitant libero eu natoque. At neque odio tempor orci mauris morbi fermentum phasellus suspendisse. Sit mattis urna at blandit dolor, semper ullamcorper.
-        </div>
-        <div class="feedback-card__by">
-            Источник <a href="">Prodoctorov.ru</a>
-        </div>
-    </div>
-</div>
-                                    </div>
-                                    <div class="doctor__feedback-item">
-                                        <div class="feedback-card">
-    <div class="feedback-card__left">
-        <span class="feedback-card__name">Константин К.</span>
-        <span class="feedback-card__date">12.12.2022</span>
-    </div>
-    <div class="feedback-card__right">
-        <div class="feedback-card__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus integer ipsum tortor, nulla et accumsan. Accumsan lorem eget volutpat, aliquet massa vulputate. Tortor sed tortor sodales diam nunc, non nam. Enim tellus egestas et ornare. Donec lorem nunc
-            etiam habitant libero eu natoque. At neque odio tempor orci mauris morbi fermentum phasellus suspendisse. Sit mattis urna at blandit dolor, semper ullamcorper.
-        </div>
-        <div class="feedback-card__by">
-            Источник <a href="">Prodoctorov.ru</a>
-        </div>
-    </div>
-</div>
-                                    </div>
-                                </div>
-                                <div class="doctor__feedback-nav">
-                                    <a href="" class="doctor__feedback-link btn btn-light-blue">Еще отзывы</a>
-                                    <button class="doctor__feedback-btn btn" data-bs-toggle="modal" data-bs-target="#feedbackModal">Оставить отзыв</button>
-                                </div>
-                            </div>
-
-
-                            <div class="doctor__licensy">
-                                <h3 class="doctor__licensy-title display3">Лицензия</h3>
-                                <div class="doctor__licensy-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus integer ipsum tortor, nulla et accumsan. Accumsan lorem eget volutpat, aliquet massa vulputate. Tortor sed tortor sodales diam nunc, non nam. Enim tellus egestas
-                                    et ornare. Donec lorem nunc etiam habitant libero eu natoque. At neque odio tempor orci mauris morbi fermentum phasellus suspendisse. Sit mattis urna at blandit dolor, semper ullamcorper. In consequat volutpat sed quis.
-                                    Dignissim etiam sollicitudin tincidunt risus libero quisque condimentum tincidunt. Etiam lacus, scelerisque nam vel. Vitae massa mattis mauris vel hac aliquam et posuere. Ac mattis habitant feugiat lorem malesuada.</div>
-                            </div>
                         </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class='doctors'>
+                <div class='container'>
+                    <h2 class="doctors__title display2">Врачи-ортопеды</h2>
+                    <div class='doctors__slider'>
+                        <div class='swiper-button-prev'>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.2188 14.8125L11.8438 14.2188C11.9688 14.0625 11.9688 13.8125 11.8438 13.6875L6.1875 8L11.8438 2.34375C11.9688 2.21875 11.9688 1.96875 11.8438 1.8125L11.2188 1.21875C11.0625 1.0625 10.8438 1.0625 10.6875 1.21875L4.125 7.75C4 7.90625 4 8.125 4.125 8.28125L10.6875 14.8125C10.8438 14.9688 11.0625 14.9688 11.2188 14.8125Z" fill="#2581C4"/>
+    </svg>
+</div>
+<div class='swiper-container'>
+    <div class='swiper-wrapper'>
+        <div class='swiper-slide'>
+            <div class="doctor-card">
+    <div class="doctor-card__inner">
+        <a href="" class="doctor-card__img">
+            <img src="img/doctor.webp" alt="">
+        </a>
+        <a href="" class="doctor-card__title">Иванов Иван Иванович</a>
+        <div class="doctor-card__prof">Стоматолог-хирург, ортопед</div>
+        <div class="doctor-card__expirience">стаж 10 лет</div>
+        <button class="doctor-card__btn btn btn-light-blue">
+            <span>Записаться онлайн</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75 1.21875L4.125 1.8125C4 1.96875 4 2.21875 4.125 2.34375L9.78125 8L4.125 13.6875C4 13.8125 4 14.0625 4.125 14.2188L4.75 14.8125C4.90625 14.9688 5.125 14.9688 5.28125 14.8125L11.8438 8.28125C11.9688 8.125 11.9688 7.90625 11.8438 7.75L5.28125 1.21875C5.125 1.0625 4.90625 1.0625 4.75 1.21875Z" fill="white"/>
+            </svg>
+        </button>
+    </div>
+</div>
+        </div>
+        <div class='swiper-slide'>
+            <div class="doctor-card">
+    <div class="doctor-card__inner">
+        <a href="" class="doctor-card__img">
+            <img src="img/doctor2.webp" alt="">
+        </a>
+        <a href="" class="doctor-card__title">Иванов Иван Иванович</a>
+        <div class="doctor-card__prof">Стоматолог-хирург, ортопед</div>
+        <div class="doctor-card__expirience">стаж 10 лет</div>
+        <button class="doctor-card__btn btn btn-light-blue">
+            <span>Записаться онлайн</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75 1.21875L4.125 1.8125C4 1.96875 4 2.21875 4.125 2.34375L9.78125 8L4.125 13.6875C4 13.8125 4 14.0625 4.125 14.2188L4.75 14.8125C4.90625 14.9688 5.125 14.9688 5.28125 14.8125L11.8438 8.28125C11.9688 8.125 11.9688 7.90625 11.8438 7.75L5.28125 1.21875C5.125 1.0625 4.90625 1.0625 4.75 1.21875Z" fill="white"/>
+            </svg>
+        </button>
+    </div>
+</div>
+        </div>
+        <div class='swiper-slide'>
+            <div class="doctor-card">
+    <div class="doctor-card__inner">
+        <a href="" class="doctor-card__img">
+            <img src="img/doctor3.webp" alt="">
+        </a>
+        <a href="" class="doctor-card__title">Иванов Иван Иванович</a>
+        <div class="doctor-card__prof">Стоматолог-хирург, ортопед</div>
+        <div class="doctor-card__expirience">стаж 10 лет</div>
+        <button class="doctor-card__btn btn btn-light-blue">
+            <span>Записаться онлайн</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75 1.21875L4.125 1.8125C4 1.96875 4 2.21875 4.125 2.34375L9.78125 8L4.125 13.6875C4 13.8125 4 14.0625 4.125 14.2188L4.75 14.8125C4.90625 14.9688 5.125 14.9688 5.28125 14.8125L11.8438 8.28125C11.9688 8.125 11.9688 7.90625 11.8438 7.75L5.28125 1.21875C5.125 1.0625 4.90625 1.0625 4.75 1.21875Z" fill="white"/>
+            </svg>
+        </button>
+    </div>
+</div>
+        </div>
+        <div class='swiper-slide'>
+            <div class="doctor-card">
+    <div class="doctor-card__inner">
+        <a href="" class="doctor-card__img">
+            <img src="img/doctor2.webp" alt="">
+        </a>
+        <a href="" class="doctor-card__title">Иванов Иван Иванович</a>
+        <div class="doctor-card__prof">Стоматолог-хирург, ортопед</div>
+        <div class="doctor-card__expirience">стаж 10 лет</div>
+        <button class="doctor-card__btn btn btn-light-blue">
+            <span>Записаться онлайн</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.75 1.21875L4.125 1.8125C4 1.96875 4 2.21875 4.125 2.34375L9.78125 8L4.125 13.6875C4 13.8125 4 14.0625 4.125 14.2188L4.75 14.8125C4.90625 14.9688 5.125 14.9688 5.28125 14.8125L11.8438 8.28125C11.9688 8.125 11.9688 7.90625 11.8438 7.75L5.28125 1.21875C5.125 1.0625 4.90625 1.0625 4.75 1.21875Z" fill="white"/>
+            </svg>
+        </button>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+<div class='swiper-button-next'>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.75 1.21875L4.125 1.8125C4 1.96875 4 2.21875 4.125 2.34375L9.78125 8L4.125 13.6875C4 13.8125 4 14.0625 4.125 14.2188L4.75 14.8125C4.90625 14.9688 5.125 14.9688 5.28125 14.8125L11.8438 8.28125C11.9688 8.125 11.9688 7.90625 11.8438 7.75L5.28125 1.21875C5.125 1.0625 4.90625 1.0625 4.75 1.21875Z" fill="#2581C4"/>
+    </svg>
+</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='works'>
+                <div class='container'>
+                    <div class='works__inner'>
+                        <h2 class="works__title display2">Работы</h3>
+                            <div class="works__grid">
+                                <div class="works__item">
+                                    <div class="work-card">
+    <img src="img/work1.webp" alt="">
+    <img src="img/work2.webp" alt="">
+</div>
+                                </div>
+                                <div class="works__item">
+                                    <div class="work-card">
+    <img src="img/work1.webp" alt="">
+    <img src="img/work2.webp" alt="">
+</div>
+                                </div>
+                                <div class="works__item">
+                                    <div class="work-card">
+    <img src="img/work1.webp" alt="">
+    <img src="img/work2.webp" alt="">
+</div>
+                                </div>
+                                <div class="works__item">
+                                    <div class="work-card">
+    <img src="img/work1.webp" alt="">
+    <img src="img/work2.webp" alt="">
+</div>
+                                </div>
+                                <div class="works__item">
+                                    <div class="work-card">
+    <img src="img/work1.webp" alt="">
+    <img src="img/work2.webp" alt="">
+</div>
+                                </div>
+                                <div class="works__item">
+                                    <div class="work-card">
+    <img src="img/work1.webp" alt="">
+    <img src="img/work2.webp" alt="">
+</div>
+                                </div>
+                            </div>
+                            <a href="" class="works__all btn btn-light-blue">Смотреть больше работ</a>
                     </div>
                 </div>
             </section>

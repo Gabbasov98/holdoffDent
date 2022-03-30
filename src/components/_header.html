@@ -43,7 +43,7 @@
     <div class='container'>
         <div class='header-bottom__inner'>
             <nav class="nav">
-                <div class="nav__item nav__item--dropdown">
+                <div class="nav__item nav__item--dropdown @@if(current=='service'){nav__item--active-link}">
                     <div class="nav__item-show">
                         <a href="" class="nav__item-link">Услуги </a>
                     </div>
@@ -116,14 +116,14 @@
                         </div>
                     </div>
                 </div>
-                <a href="" class="nav__item @@if(current=='doctor'){nav__item--active-link}">Врачи</a>
+                <a href="doctor.html" class="nav__item @@if(current=='doctor'){nav__item--active-link}">Врачи</a>
                 <a href="" class="nav__item">Технологии</a>
-                <a href="" class="nav__item">отзывы</a>
-                <a href="" class="nav__item">До и после</a>
+                <a href="" class="nav__item @@if(current=='feedback'){nav__item--active-link}">отзывы</a>
+                <a href="works.html" class="nav__item @@if(current=='works'){nav__item--active-link}">До и после</a>
                 <a href="" class="nav__item">Акции</a>
                 <a href="" class="nav__item">Клиника</a>
-                <a href="" class="nav__item">Цены</a>
-                <a href="" class="nav__item">Контакты</a>
+                <a href="prices.html" class="nav__item @@if(current=='prices'){nav__item--active-link}">Цены</a>
+                <a href="contacts.html" class="nav__item @@if(current=='contacts'){nav__item--active-link}">Контакты</a>
             </nav>
 
             <div class="header__search">

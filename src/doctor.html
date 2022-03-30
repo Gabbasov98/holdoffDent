@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="doctor__feedback-nav">
                                     <a href="" class="doctor__feedback-link btn btn-light-blue">Еще отзывы</a>
-                                    <button class="doctor__feedback-btn btn">Оставить отзыв</button>
+                                    <button class="doctor__feedback-btn btn" data-bs-toggle="modal" data-bs-target="#feedbackModal">Оставить отзыв</button>
                                 </div>
                             </div>
 
@@ -172,7 +172,7 @@
             @@include('components/_gallery.html')
         </div>
     </div>
-    @@include('components/_scripts.html')
+    @@include('components/_popups.html') @@include('components/_scripts.html')
 </body>
 
 </html>

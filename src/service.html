@@ -1,0 +1,188 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Врачи", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+
+    <div class="wrapper">
+
+        @@include('components/_header.html',{"current":"service"})
+        <!-- </header> -->
+
+        <main class="content">
+
+            <section class='service tab-parent'>
+                <div class='container'>
+                    <div class='service__inner'>
+                        <div class="service__left">
+                            <h1 class="service__title display2">Имплантация зубов</h1>
+                            <div class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus ut velit scelerisque
+                                iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non. Nec quis dolor auctor a nulla sed
+                                amet. Convallis morbi nunc commodo quis quis aliquet. Dignissim in ac integer dolor. Facilisis tristique libero bibendum mattis et, ut molestie dui. Pulvinar vestibulum maecenas nulla nec nulla elit ut.</div>
+
+                            <div class="service__tabs tabs">
+                                <div class="tab tab--active" data-tab-path="1">описание</div>
+                                <div class="tab" data-tab-path="2">стоиомсть </div>
+                                <div class="tab" data-tab-path="3">врачи </div>
+                                <div class="tab" data-tab-path="4">работы </div>
+                            </div>
+                            <div class="service__content">
+                                <div class="tab__content tab__content--active" data-tab-path="1">
+                                    <div class="service-desc">
+                                        <div class="service__subtitle">Описание</div>
+                                        <div class="service-desc__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus
+                                                ut velit scelerisque iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non.
+                                                Nec quis dolor auctor a nulla sed amet. Convallis morbi nunc commodo quis quis aliquet. Dignissim in ac integer dolor. Facilisis tristique libero bibendum mattis et, ut molestie dui. Pulvinar vestibulum
+                                                maecenas nulla nec nulla elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa quisque sollicitudin consequat, eget dictum morbi ut donec. Donec ac mauris, eget turpis. Feugiat tortor, eu sit consectetur fames. Adipiscing lectus
+                                                ut velit scelerisque iaculis commodo, ipsum amet. Aliquam amet, dignissim suspendisse nulla rutrum enim nunc. Faucibus ut fermentum nibh diam amet vehicula. Amet, diam ipsum, ut non felis sed bibendum non.
+                                                Nec quis dolor auctor a nulla sed amet. Convallis morbi nunc commodo quis quis aliquet. Dignissim in ac integer dolor. Facilisis tristique libero bibendum mattis et, ut molestie dui. Pulvinar vestibulum
+                                                maecenas nulla nec nulla elit ut.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab__content" data-tab-path="2">
+                                    <div class="service-price">
+                                        <div class="service__subtitle">Стоимость</div>
+                                        <div class="service-price__items">
+                                            <div class="service-price__item">
+                                                @@include('components/_price-card.html')
+                                            </div>
+                                            <div class="service-price__item">
+                                                @@include('components/_price-card.html')
+                                            </div>
+                                            <div class="service-price__item">
+                                                @@include('components/_price-card.html')
+                                            </div>
+                                            <div class="service-price__item">
+                                                @@include('components/_price-card.html')
+                                            </div>
+                                            <div class="service-price__item service-price__item--hidden">
+                                                @@include('components/_price-card.html')
+                                            </div>
+                                            <div class="service-price__item service-price__item--hidden">
+                                                @@include('components/_price-card.html')
+                                            </div>
+                                        </div>
+                                        <button class="service-price__all btn">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.7812 7.84375L14.1875 7.21875C14.0312 7.0625 13.7812 7.0625 13.6562 7.21875L8.8125 12.0625V1.375C8.8125 1.1875 8.625 1 8.4375 1H7.5625C7.34375 1 7.1875 1.1875 7.1875 1.375V12.0625L2.3125 7.21875C2.1875 7.0625 1.9375 7.0625 1.78125 7.21875L1.1875 7.84375C1.03125 7.96875 1.03125 8.21875 1.1875 8.375L7.71875 14.9062C7.875 15.0625 8.09375 15.0625 8.25 14.9062L14.7812 8.375C14.9375 8.21875 14.9375 7.96875 14.7812 7.84375Z" fill="#2581C4"/>
+                                            </svg>
+                                            <span class="service-price__all-show">смотреть все цены</span>
+                                            <span class="service-price__all-hide">скрыть</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tab__content" data-tab-path="3">ВРАЧИ</div>
+                                <div class="tab__content" data-tab-path="4">РАБОТЫ</div>
+                            </div>
+                        </div>
+                        <div class="service__right">
+                            <form class="doctor-form">
+                                <div class="doctor-form__inner">
+                                    <p class="doctor-form__title">Запись онлайн</p>
+                                    <p class="doctor-form__desc">на прием к Константинову К. А</p>
+                                    <div class="doctor-form__fields">
+                                        <fieldset class='form-group'>
+                                            <div class="custom-select">
+                                                <input disabled type="text" value="12. 09.2022, пн">
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">12. 09.2022, пн</div>
+                                                        <div class="custom-select__dropdown-item">13. 09.2022, пн</div>
+                                                        <div class="custom-select__dropdown-item">14. 09.2022, пн</div>
+                                                        <div class="custom-select__dropdown-item">15. 09.2022, пн</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <div class="custom-select">
+                                                <input disabled type="text" value="12:00">
+                                                <div class="custom-select__dropdown">
+                                                    <div class="custom-select__dropdown-inner">
+                                                        <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">12:00</div>
+                                                        <div class="custom-select__dropdown-item">13:00</div>
+                                                        <div class="custom-select__dropdown-item">14:00</div>
+                                                        <div class="custom-select__dropdown-item">15:00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <input type='text' placeholder="Имя" />
+                                        </fieldset>
+                                        <fieldset class='form-group'>
+                                            <input type='text' placeholder="Телефон" />
+                                        </fieldset>
+                                    </div>
+                                    <button class="doctor-form__btn btn btn-dark-blue">Записаться </button>
+                                    <div class="doctor-form__phone">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.4141 14.6406L15.0391 12.7656C14.9219 12.7266 14.7656 12.6875 14.6484 12.6875C14.4141 12.6875 14.1016 12.8438 13.9453 13.0391L11.9922 15.4219C9.41406 14.1719 6.28906 11.0859 5.07812 8.50781L7.46094 6.55469C7.65625 6.39844 7.8125 6.08594 7.8125 5.8125C7.8125 5.73438 7.77344 5.57812 7.73438 5.46094L5.85938 1.08594C5.70312 0.773438 5.3125 0.539062 4.96094 0.539062C4.92188 0.539062 4.84375 0.539062 4.76562 0.539062L0.703125 1.47656C0.3125 1.55469 0 1.98438 0 2.375C0 12.4141 8.08594 20.5 18.125 20.5C18.5156 20.5 18.9453 20.1875 19.0234 19.7969L19.9609 15.7344C19.9609 15.6562 19.9609 15.5781 19.9609 15.5391C19.9609 15.1875 19.7266 14.7969 19.4141 14.6406Z" fill="#B0C8D9"/>
+                                    </svg>
+                                        <div>
+                                            <span class="doctor-form__phone-title">или запишитесь по телефону</span>
+                                            <a href="tel:+7 (495) 908-69-68" class="doctor-form__phone-link">+7 (495) 908-69-68</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class='doctors'>
+                <div class='container'>
+                    <h2 class="doctors__title display2">Врачи-ортопеды</h2>
+                    <div class='doctors__slider'>
+                        @@include('components/_doctors-slider.html')
+                    </div>
+                </div>
+            </section>
+
+            <section class='works'>
+                <div class='container'>
+                    <div class='works__inner'>
+                        <h2 class="works__title display2">Работы</h3>
+                            <div class="works__grid">
+                                <div class="works__item">
+                                    @@include('components/_work-card.html')
+                                </div>
+                                <div class="works__item">
+                                    @@include('components/_work-card.html')
+                                </div>
+                                <div class="works__item">
+                                    @@include('components/_work-card.html')
+                                </div>
+                                <div class="works__item">
+                                    @@include('components/_work-card.html')
+                                </div>
+                                <div class="works__item">
+                                    @@include('components/_work-card.html')
+                                </div>
+                                <div class="works__item">
+                                    @@include('components/_work-card.html')
+                                </div>
+                            </div>
+                            <a href="" class="works__all btn btn-light-blue">Смотреть больше работ</a>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+
+        <div class="gallery-modal">
+            @@include('components/_gallery.html')
+        </div>
+    </div>
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>
