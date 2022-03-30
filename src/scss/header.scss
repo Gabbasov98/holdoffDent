@@ -170,6 +170,7 @@
         margin-right: 90px;
         text-transform: uppercase;
         position: relative;
+        cursor: pointer;
         &--dropdown {
             text-transform: unset;
             &.nav__item--active-link {
@@ -280,7 +281,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1240px) {
     .header {
         &__logo {
             width: 180px;
