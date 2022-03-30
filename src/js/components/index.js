@@ -68,6 +68,7 @@ $(document).ready(function() {
             slidesPerView: 1,
             spaceBetween: 0,
             loop: true,
+            speed: 1500,
             autoplay: {
                 delay: sliderDelay,
             },

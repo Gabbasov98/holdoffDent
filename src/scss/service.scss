@@ -200,4 +200,11 @@
             position: absolute;
         }
     }
+    .works {
+        &__grid {
+            grid-template-columns: 1fr;
+            width: calc(100% + 40px);
+            margin-left: -20px;
+        }
+    }
 }
