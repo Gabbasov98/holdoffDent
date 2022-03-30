@@ -7,6 +7,8 @@
     font-size: 12px;
     transition: all ease-out .100s;
     letter-spacing: 0.02em;
+    border: none;
+    line-height: 100%;
     &:focus {
         box-shadow: none;
     }
