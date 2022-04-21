@@ -19,35 +19,41 @@
         height: 100%;
         position: absolute;
         z-index: 2;
-        padding: 68px 170px 40px;
+        padding: 68px 170px 36px;
         top: 0;
         left: 0;
     }
     &__title {
         max-width: 670px;
         color: $green;
+        letter-spacing: -0.03em;
     }
     &__desc {
         font-size: 24px;
         line-height: 158%;
-        margin-top: 48px;
+        margin-top: 53px;
+        letter-spacing: 0.02em;
     }
     &__price {
         font-weight: 300;
         font-size: 52px;
         line-height: 92%;
-        margin-top: 10px;
+        margin-top: 9px;
+        letter-spacing: 0.02em;
     }
     &__btn {
         width: 257px;
+        padding: 0 24px 0 32px;
         height: 64px;
         border-radius: 60px;
         margin-top: 48px;
         font-weight: 600;
         font-size: 13px;
         text-transform: uppercase;
+        letter-spacing: 0.8px;
+        justify-content: flex-start;
         svg {
-            margin-left: 20px;
+            margin-left: 18px;
             margin-bottom: 3px;
         }
     }

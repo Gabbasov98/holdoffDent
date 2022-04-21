@@ -33,13 +33,14 @@
         }
     }
     &__phone {
-        margin-left: 70px;
+        margin-left: 84px;
         &-link {
             display: flex;
             align-items: center;
             font-weight: 600;
             font-size: 14px;
             line-height: 26px;
+            letter-spacing: 0.03em;
             svg {
                 margin-right: 24px;
             }
@@ -54,6 +55,7 @@
             border-radius: 8px;
             margin-left: 44px;
             white-space: nowrap;
+            letter-spacing: 0.02em;
         }
     }
     &__mob-btn,
@@ -64,7 +66,8 @@
         font-weight: 600;
         font-size: 13px;
         text-transform: uppercase;
-        margin-left: 100px;
+        margin-left: 129px;
+        letter-spacing: 0.8px;
     }
     &__mob-btn {
         margin-left: 0;
@@ -137,6 +140,7 @@
 
 .header-top {
     padding: 16px 0;
+    box-shadow: inset 0px -1px 0px #E3E3E3;
     &__inner {
         display: flex;
         align-items: center;
@@ -160,17 +164,20 @@
 .nav {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     &__item {
-        padding: 40px 0;
         display: block;
         letter-spacing: 0.06em;
         font-weight: 600;
         font-size: 13px;
         line-height: 16px;
-        margin-right: 90px;
         text-transform: uppercase;
         position: relative;
         cursor: pointer;
+        padding: 40px 45px;
+        &:first-child {
+            margin-left: -45px;
+        }
         &--dropdown {
             text-transform: unset;
             &.nav__item--active-link {
@@ -264,7 +271,11 @@
         flex-grow: 1;
         justify-content: space-between;
         &__item {
-            margin-right: 0;
+            padding-left: 30px;
+            padding-right: 30px;
+            &:first-child {
+                margin-left: -30px;
+            }
         }
     }
 }
@@ -277,6 +288,18 @@
         }
         &__btn {
             margin-left: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .nav {
+        &__item {
+            padding-left: 15px;
+            padding-right: 15px;
+            &:first-child {
+                margin-left: -15px;
+            }
         }
     }
 }
@@ -321,6 +344,18 @@
             height: 45px;
             font-size: 12px;
             margin-left: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .nav {
+        &__item {
+            padding-left: 8px;
+            padding-right: 8px;
+            &:first-child {
+                margin-left: -8px;
+            }
         }
     }
 }
@@ -493,6 +528,9 @@
         &__item {
             padding: 0;
             margin-bottom: 26px;
+            &:first-child {
+                margin-left: 0;
+            }
             &::before {
                 display: none;
             }

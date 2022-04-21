@@ -10,7 +10,11 @@ body {
     font-family: 'Inter', sans-serif !important;
     font-weight: 400;
     color: $black;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.3px;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     &.fixed-body {
         overflow-y: hidden;
     }
