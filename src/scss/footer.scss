@@ -16,21 +16,21 @@
             font-weight: 600;
             font-size: 12px;
             line-height: 14px;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.8px;
             color: #FFFFFF;
             text-transform: uppercase;
             &:hover {
                 color: $lightBlue;
             }
             &:not(:last-child) {
-                margin-right: 60px;
+                margin-right: 58px;
             }
         }
     }
     &__socials {
         display: flex;
         align-items: center;
-        margin-right: 25px;
+        margin-right: -13px;
         &-item {
             width: 48px;
             height: 48px;
@@ -70,7 +70,7 @@
         }
     }
     &__logo {
-        width: 214px;
+        width: 190px;
         display: block;
         img {
             width: 100%;
@@ -94,14 +94,14 @@
         }
     }
     &__time {
-        margin-left: 70px;
+        margin-left: 80px;
         &-item {
             display: block;
             line-height: 26px;
         }
     }
     &__phone {
-        margin-left: 70px;
+        margin-left: 86px;
         &-link {
             display: flex;
             align-items: center;
@@ -109,6 +109,7 @@
             font-size: 14px;
             line-height: 26px;
             color: #FFFFFF;
+            letter-spacing: 0.8px;
             svg {
                 margin-right: 24px;
             }
@@ -135,7 +136,7 @@
         font-weight: 600;
         font-size: 13px;
         text-transform: uppercase;
-        margin-left: 100px;
+        margin-left: 225px;
         background: #273353;
         color: $blue;
         &:hover {
@@ -167,6 +168,9 @@
                     margin-right: 12px;
                 }
             }
+        }
+        &__btn {
+            margin-left: 120px;
         }
     }
 }

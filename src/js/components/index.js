@@ -51,7 +51,7 @@ function achievementSlider() {
     var swiper = new Swiper('.achievement .swiper-container', {
         slidesPerView: "auto",
         spaceBetween: 32,
-        // loop: true,
+        loop: true,
         navigation: {
             nextEl: '.achievement .swiper-button-next',
             prevEl: '.achievement .swiper-button-prev',
