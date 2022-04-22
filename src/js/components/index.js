@@ -69,9 +69,9 @@ $(document).ready(function() {
             spaceBetween: 0,
             loop: true,
             speed: 1500,
-            // autoplay: {
-            //     delay: sliderDelay,
-            // },
+            autoplay: {
+                delay: sliderDelay,
+            },
             pagination: {
                 el: '.main .swiper-pagination',
                 type: 'bullets',
